@@ -1,0 +1,20 @@
+<div class="container">
+  <h3>Home Page Content</h3>
+  <p>Navigation bars can also hold dropdown menus.</p>
+
+<p>{{name}}</p>
+
+
+<div *ngIf="data">THIS IS STRUCTURAL DIRECTIVDE DATA</div>
+
+<button (click)="mydata()">click btn</button>
+
+
+<ul>
+
+  <li *ngFor="let srinu of countrries | slice:0:show">{{srinu.name}}-{{srinu.code | uppercase}}</li>
+  </ul>
+
+  <button (click)='read()' [hidden]="!edited">Read More Countries</button>
+  <button (click)='less()' [hidden]="!lessedited">Less More Countries</button>
+</div>

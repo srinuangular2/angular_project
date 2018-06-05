@@ -1,0 +1,126 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-3">
+    <div class="left_panel">
+      <label>Search</label>
+      <input type="text" placeholder="Search" class="form-control">
+      <div class="gap10"></div>
+       <div class="text_light">
+        <p><strong>Locations</strong></p>
+        <div class="checkbox">
+          <input type="checkbox"> Hyderabad
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Bangaloore
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Delhi
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Kolkata
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Mumbai
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Pune
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Chennai
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Kochi
+        </div>
+        
+       </div> 
+       
+        <div class="gap10"></div>
+       <div class="text_light">
+        <p><strong>Languages</strong></p>
+        <div class="checkbox">
+          <input type="checkbox"> English
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Hindi
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Telugu
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> French
+        </div>
+         <div class="checkbox">
+          <input type="checkbox"> Iatalian
+        </div>
+        </div>
+        <div class="gap10"></div>
+       <div class="text_light">
+        <p><strong>Sort By</strong></p>
+        <div class="radio">
+          <input type="radio" name="sortBy"> Date
+        </div>
+         <div class="radio">
+          <input type="radio" name="sortBy"> Relevent
+        </div>
+        
+         
+        </div>
+       </div> 
+     
+    </div>
+    <div class="col-md-9 col-sm-9">
+        <h1 class="title_h1 h1_mr_0 pull-left">Angular 2 Mini Project</h1>
+        <div class="input-group pull-right mr_btm_10">
+          <select class="form-control">
+            <option>--select--</option>
+            <option>10</option>
+            <option>20</option>
+            <option>50</option>
+            <option>100</option>
+          </select>
+        </div>
+    <div class="clearfix"></div>
+    <div class="main_panel">
+      <table class="table table-bordered">
+       <thead>
+         <tr>
+        
+          <th>Name</th>
+          <th>Region</th>
+          <th>languages</th>
+          <th>capital</th>
+          <th>population</th>
+         </tr>
+       </thead>
+       
+       <tbody>
+         <tr *ngFor ='let ccode of returnJson'>          
+          <td>{{ccode.name}}</td>
+          <td>{{ccode.region}}</td>
+          <td ><div *ngFor='let lang of ccode.languages'>{{lang.name}}</div></td>
+          <td>{{ccode.capital}}</td>
+          <td>{{ccode.population}}</td>
+         </tr>
+         
+         
+       </tbody>
+      </table>
+    </div>
+    <div class="col-md-12 text-center">
+    <ul class="pagination no_mr">
+      <li><a href="#">&laquo;</a></li>
+       <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+         <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+           <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+             <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+               <li><a href="#">9</a></li>
+       <li><a href="#">&raquo;</a></li>
+    </ul>
+    </div>
+    </div>
+  </div>
+</div>

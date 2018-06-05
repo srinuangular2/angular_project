@@ -1,0 +1,20 @@
+body{font-family: 'Roboto', sans-serif; background:#eee;}
+.navbar{border-radius:0px; background:#fff;}
+.nav.navbar-nav>li>a{padding:24px 15px; font-size:16px; font-weight:300;}
+.navbar-brand{font-weight:700; font-size:24px; padding:24px 15px;}
+.left_panel{background:#fff;padding:10px;box-shadow: 0 1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.1), 0 2px 20px 0 rgba(0,0,0,.2);}
+.left_panel>input.form-control{border-radius:0px; height:40px; font-weight:300;}
+.gap10{padding:10px 0px;}
+.text_light{font-weight:300;}
+.checkbox,.radio{margin-left:20px;}
+.checkbox>input[type="checkbox"]{margin-top:3px;}
+.main_panel{background:#fff;}.text-warning{color:#e2a02e;}.text-success{color:#0C0;}
+table.table{background:#fff; border:none !important; font-weight:300;}
+table.table>thead>tr>th,table.table>tbody>tr>td{padding: 20px;}
+h1.title_h1{font-weight:500; font-size:24px; margin:10px 0px;}
+.h1_mr_0{margin-top:0px !important;}
+.mr_btm_10{margin-bottom:10px;}
+.no_mr{margin:0px;}
+.pagination>li>a{padding:8px 15px;}
+.input-group,select,option{font-weight:300;}
+

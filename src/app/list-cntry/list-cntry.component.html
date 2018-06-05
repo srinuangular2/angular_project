@@ -1,0 +1,18 @@
+<table class="table">
+ <thead>
+  <tr>
+    <th>Country Name</th>
+    <th>Country Code</th>
+    <th>Languages</th>
+  </tr>
+</thead>
+<tbody>
+
+<tr *ngFor='let srinucode of srinuJson'>
+  <td>{{srinucode.name}}</td>
+  <td>{{srinucode.capital}}</td>
+  <td><div *ngFor='let srinucodeone of srinucode.languages'>{{srinucodeone.name}}</div></td>
+</tr>
+</tbody>
+
+</table>

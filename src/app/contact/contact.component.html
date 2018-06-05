@@ -1,0 +1,25 @@
+<div class="container">
+  <h3>Contact Page Content</h3>
+  <p>Navigation bars can also hold dropdown menus.</p>
+
+<p>The following example adds a dropdown menu for the "Page 1" button:</p>
+</div>
+
+
+<div class="container">
+
+  <div class="jumbotron">
+  <p *ngIf='srinu'>This is structral Directive</p>
+  <button (click)='hideStr()'>Hide Structural</button>
+  <br>
+  <br>
+
+  <ol>
+    <li *ngFor='let countriesList of countries | slice:0:show'>{{countriesList.Name}}-{{countriesList.Code}}</li>
+  </ol>
+
+  <button (click)='read()' [hidden]='!hideadd'>Add</button>
+  <button (click)='less()' [hidden]='!hideremove'>Remove</button>
+
+  </div>
+</div>
